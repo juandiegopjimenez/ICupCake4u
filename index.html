@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Juan Diego Peña Jiménez @juand_pjimenez">
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+  <link rel="icon" href="imagenes/icono.ico">
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <script src="https://kit.fontawesome.com/fccee00fe1.js" crossorigin="anonymous"></script>
+  <title>ICupCake4u</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="imagenes/logo.png" alt="Logo ICupCake4u">
+    <div class="header">
+      <div class="header__icons">
+        <i class="fas fa-search" id="icon-search"></i>
+        <a href="compra.html"><i class="fas fa-shopping-bag" id="shopping-bag"></i></a>
+        <i id="icons__bars" class="fas fa-bars " onClick="cambiarClase()"></i>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#"><i id="nav__home-icon" class="fas fa-home"></i>Inicio</a></li>
+          <li><a href="#"><i id="nav__cupcake-icon" class="fas fa-bread-slice"></i>Cupcakes</a></li>
+          <li><a href="#"><i id="nav__cake-icon" class="fas fa-birthday-cake"></i>Pasteles</a></li>
+          <li><a href="#"><i id="nav__orgullo-icon" class="fas fa-ribbon"></i>Orgullo</a></li>
+          <li><a href="#"><i id="nav__people-icon" class="fas fa-user-friends"></i>Clientes <span>satisfechos</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div id="fondo"></div>
+    <div id="ctn-bars-search">
+      <input type="text" id="input-search" placeholder="¿Qué deseas buscar?">
+    </div>
+    <ul id="box-search">
+      <li><a href="#"><i class="fas fa-search"></i>Cupcakes</a></li>
+      <li><a href="#"><i class="fas fa-search"></i>Pasteles</a></li>
+      <li><a href="#"><i class="fas fa-search"></i>Galletas</a></li>
+      <li><a href="#"><i class="fas fa-search"></i>Postres</a></li>
+      <li><a href="#"><i class="fas fa-search"></i>Regalos</a></li>
+      <li><a href="#"><i class="fas fa-search"></i>Orgullo</a></li>
+    </ul>
+    <div id="cover-ctn-search"></div>
+    <div class="ctn-slider">
+      <img id="slider">
+    </div>
+    <h1>Cupcakes</h1>
+    <div class="imagen-1">
+      <img src="imagenes/principal_1.jpg" alt="Cupcakes dia del padre">
+      <h3>Texto de ejemplo</h3>
+    </div>
+    <div class="imagen-2">
+      <img src="imagenes/principal_2.jpg" alt="Cupcakes graduación universitaria">
+      <h3>Texto de ejemplo</h3>
+    </div>
+    <div class="imagen-3">
+      <img src="imagenes/principal_3.jpg" alt="Cupcakes ramo de girasoles">
+      <h3>Texto de ejemplo</h3>
+    </div>
+    <div class="imagen-4">
+      <img src="imagenes/principal_4.jpg" alt="Cupcakes rolling stones">
+      <h3>Texto de ejemplo</h3>
+    </div>
+    <div class="imagen-5">
+      <img src="imagenes/principal_5.jpg" alt="Cupcakes mickey mouse">
+      <h3>Texto de ejemplo</h3>
+    </div>
+    <div class="imagen-6">
+      <img src="imagenes/principal_6.jpg" alt="Cupcakes ACDC">
+      <h3>Texto de ejemplo</h3>
+    </div>
+    <h5> Míralos todos</h5>
+  </main>
+  <aside>
+    <div class="quick-lines">
+      <h4>Atajos</h4>
+      <ul>
+        <li><a href="#">Busqueda</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contactanos</a></li>
+        <li><a href="#">Sobre nosotros</a></li>
+      </ul>
+    </div>
+  </aside>
+  <footer>
+    <div class="Contacto">
+      <h4>Contactanos:</h4>
+      <p>
+        +57 314 2239117
+        ejemplo@gmail.com
+      </p>
+    </div>
+    <div class="redes">
+      <h4>Siguenos en nuestras redes</h4>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </footer>
+  <script src="js/buscador.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
