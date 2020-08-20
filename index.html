@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="estilos/normalize.css">
   <link rel="stylesheet" href="estilos/estilos.css">
   <script src="https://kit.fontawesome.com/fccee00fe1.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
   <title>ICupCake4u</title>
 </head>
 <body>
   <header>
-    <img class="logo" src="imagenes/logo.png" alt="Logo ICupCake4u">
+    <a href="index.html"><img class="logo" src="imagenes/logo.png" alt="Logo ICupCake4u"></a>
     <div class="header">
       <div class="header__icons">
         <i class="fas fa-search" id="icon-search"></i>
@@ -23,7 +24,7 @@
       </div>
       <nav id="nav">
         <ul>
-          <li><a href="#"><i id="nav__home-icon" class="fas fa-home"></i>Inicio</a></li>
+          <li><a href="index.html"><i id="nav__home-icon" class="fas fa-home"></i>Inicio</a></li>
           <li><a href="#"><i id="nav__cupcake-icon" class="fas fa-bread-slice"></i>Cupcakes</a></li>
           <li><a href="#"><i id="nav__cake-icon" class="fas fa-birthday-cake"></i>Pasteles</a></li>
           <li><a href="#"><i id="nav__orgullo-icon" class="fas fa-ribbon"></i>Orgullo</a></li>
@@ -46,8 +47,31 @@
       <li><a href="#"><i class="fas fa-search"></i>Orgullo</a></li>
     </ul>
     <div id="cover-ctn-search"></div>
-    <div class="ctn-slider">
-      <img id="slider">
+    <div class="slideShow">
+      <ul class="slider">
+        <li>
+          <img src="imagenes/slider_1.jpg" alt="Cupcakes te quiero mucho">
+        </li>
+        <li>
+          <img src="imagenes/slider_2.jpg" alt="Cupcakes te quiero mucho">
+        </li>
+        <li>
+          <img src="imagenes/slider_3.jpg" alt="Cupcakes te quiero mucho">
+        </li>
+        <li>
+          <img src="imagenes/slider_4.jpg" alt="Cupcakes te quiero mucho">
+        </li>
+        <li>
+          <img src="imagenes/slider_5.jpg" alt="Cupcakes te quiero mucho">
+        </li>
+      </ul>
+      <ol class="pagination"></ol>
+      <div class="left">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="right">
+        <i class="fas fa-chevron-right"></i>
+      </div>
     </div>
     <h1>Cupcakes</h1>
     <div class="imagen-1">
@@ -101,7 +125,7 @@
       <i class="fab fa-instagram"></i>
     </div>
   </footer>
-  <script src="js/buscador.js"></script>
-  <script src="js/nav.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
