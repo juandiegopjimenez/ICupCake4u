@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   $(".slider li").hide();
   $(".slider li:first").show();
-  $(".pagination li:first").css({ color: "#000" });
+  $(".pagination li:first").css({ color: "#fff" });
 
   $(".pagination li").click(pagination);
   $(".right i").click(nextSlider);
@@ -26,7 +26,7 @@ $(document).ready(function() {
     $(".slider li:nth-child(" + paginationPos + ")").fadeIn();
 
     $(".pagination li").css({ color: "rgba(0, 0, 0, 0.5)" });
-    $(this).css({ color: "#000" });
+    $(this).css({ color: "#fff" });
 
     imgPos = paginationPos;
   }
@@ -38,7 +38,7 @@ $(document).ready(function() {
       imgPos++;
     }
     $(".pagination li").css({ color: "rgba(0, 0, 0, 0.5)" });
-    $(".pagination li:nth-child(" + imgPos + ")").css({ color: "#000" });
+    $(".pagination li:nth-child(" + imgPos + ")").css({ color: "#fff" });
     $(".slider li").hide();
     $(".slider li:nth-child(" + imgPos + ")").fadeIn();
   }
@@ -50,7 +50,7 @@ $(document).ready(function() {
       imgPos--;
     }
     $(".pagination li").css({ color: "rgba(0, 0, 0, 0.5)" });
-    $(".pagination li:nth-child(" + imgPos + ")").css({ color: "#000" });
+    $(".pagination li:nth-child(" + imgPos + ")").css({ color: "#fff" });
     $(".slider li").hide();
     $(".slider li:nth-child(" + imgPos + ")").fadeIn();
   }

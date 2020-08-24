@@ -1,7 +1,11 @@
 // Buscador
 
-document.getElementById("icon-search").addEventListener("click", mostrar_buscador);
-document.getElementById("cover-ctn-search").addEventListener("click", ocultar_buscador);
+document
+  .getElementById("icon-search")
+  .addEventListener("click", mostrar_buscador);
+document
+  .getElementById("cover-ctn-search")
+  .addEventListener("click", ocultar_buscador);
 
 var bars_search = document.getElementById("ctn-bars-search");
 var cover_ctn_search = document.getElementById("cover-ctn-search");
@@ -25,7 +29,9 @@ function ocultar_buscador() {
   box_search.style.display = "none";
 }
 
-document.getElementById("input-search").addEventListener("keyup", buscador_interno);
+document
+  .getElementById("input-search")
+  .addEventListener("keyup", buscador_interno);
 
 function buscador_interno() {
   let filter = inputSearch.value.toUpperCase();
@@ -56,9 +62,6 @@ function cambiarClase() {
 
   let menuOpen = document.getElementById("icons__bars");
   menuOpen.classList.toggle("fa-times");
-
-  let fondoActive = document.getElementById("fondo");
-  fondoActive.classList.toggle("fondo-active");
 
   menuOpen.style.color = "#ff6698";
 }
