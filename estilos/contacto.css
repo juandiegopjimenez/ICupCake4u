@@ -1,0 +1,29 @@
+form {
+  width: 400px;
+  margin: auto;
+  background: #d71f9e;
+  position: relative;
+  top: 25vh;
+  margin-bottom: 300px;
+}
+
+input, textarea {
+  margin: 15px;
+  padding: 10px;
+  width: 340px;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+input[type="submit"] {
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 300px;
+  min-width: 340px;
+  max-width: 340px;
+}

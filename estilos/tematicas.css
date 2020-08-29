@@ -1,0 +1,21 @@
+header {
+  top: 0;
+}
+
+.imagenes div {
+  height: 410px;
+}
+
+.imagenes div:last-child {
+  height: 350px;
+}
+
+.imagenes img {
+  height: 380px;
+  width: 370px;
+  object-fit: scale-down;
+}
+
+aside {
+  padding-top: 10px;
+}

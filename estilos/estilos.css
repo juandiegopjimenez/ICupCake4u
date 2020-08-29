@@ -323,6 +323,7 @@ cite {
   height: 367px;
   width: 367px;
   object-fit: fill;
+  border: 5px solid #ff78a2;
 }
 
 .imagenes h3 {
@@ -388,7 +389,7 @@ aside {
 .quick-lines {
   background: #ff78a2;
   color: #000;
-  height: 250px;
+  height: 200px;
   padding: 20px;
   font-size: 22px;
   line-height: 2;

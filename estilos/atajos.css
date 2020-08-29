@@ -1,0 +1,92 @@
+.ctn {
+  position: relative;
+  top: 147px;
+  margin-bottom: 147px;
+}
+
+.ctn li {
+  height: 150px;
+  border-bottom: 3px solid #a49d9d;
+  display: flex;
+  align-items: center;
+}
+
+.ctn li:first-child {
+  border-top: 3px solid #a49d9d;
+}
+
+.ctn img {
+  margin-left: 5px;
+}
+
+.home {
+  width: 120px;
+}
+
+.cupcake {
+  width: 110px;
+}
+
+.cookie {
+  width: 110px;
+}
+
+.popcake {
+  width: 115px;
+}
+
+.proud {
+  width: 110px;
+}
+
+.tongue {
+  width: 110px;
+}
+
+.phone {
+  width: 105px;
+}
+
+.gift {
+  width: 170px;
+}
+
+.flowers {
+  width: 150px;
+}
+
+.cake {
+  width: 110px;
+}
+
+.guitar {
+  width: 110px;
+}
+
+.bag {
+  width: 110px;
+}
+
+.people {
+  width: 110px;
+}
+
+.happy {
+  width: 140px;
+}
+
+.ctn img {
+  height: 120px;
+  flex-basis: 120px;
+}
+
+.ctn a {
+  color: #ff78a2;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+.ctn a:nth-child(2) {
+  align-self: center;
+  font-size: 40px;
+}

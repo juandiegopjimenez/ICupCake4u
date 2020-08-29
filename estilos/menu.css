@@ -1,0 +1,29 @@
+/* Cupcakes */
+
+.ctn-imagenes {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: repeat(auto-fit, 200px);
+  grid-gap: 10px;
+  margin-top: 24vh;
+  margin-bottom: 30px;
+}
+
+.ctn-imagenes img {
+  border: 5px solid #ff78a2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ctn-imagenes div {
+  height: 200px;
+  width: 200px;
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.ctn-imagenes div:last-child {
+  grid-column: span 2;
+  width: 100%;
+}

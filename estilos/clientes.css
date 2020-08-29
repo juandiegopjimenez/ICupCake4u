@@ -1,0 +1,33 @@
+h1 {
+  font-size: 50px;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 20px;
+}
+
+.imagenes {
+  margin-top: 25vh;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.imagenes div {
+  height: 430px;
+  align-self: center;
+}
+
+.imagenes div img {
+  height: 380px;
+  width: 370px;
+  object-fit: fill;
+  border: 5px solid #ff78a2;
+}
+
+h2 {
+  position: relative;
+  bottom: 55px;
+  font-size: 50px;
+  color: #ff78a2;
+  text-align: center;
+}
