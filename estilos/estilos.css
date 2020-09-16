@@ -4,7 +4,9 @@
 }
 
 body {
-  background: #fff;
+  background: linear-gradient(to bottom, #fff, #ffb5cc);
+  background-size: 100%;
+  background-attachment: fixed;
 }
 a {
   text-decoration: none;
@@ -327,10 +329,11 @@ cite {
 }
 
 .imagenes h3 {
-  color: #ff78a2;
+  font-family: 'Libre Baskerville', serif;
+  color: #3c270e;
   font-size: 35px;
   text-align: left;
-  text-shadow: 1px 1px 1px #ff8fbd;
+  text-shadow: 10px 10px 10px #34210a;
 }
 
 .imagenes p {

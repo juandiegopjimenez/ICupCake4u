@@ -1,3 +1,6 @@
+<?php
+  include("correo.php");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -55,12 +58,60 @@
       <li><a href="../html/../php/index.php"><i class="fas fa-search"></i>Contactanos</a></li>
     </ul>
     <div id="cover-ctn-search"></div>
-    <form method="post">
-      <input type="text" placeholder="Nombre" name="name">
-      <input type="email" placeholder="Email" name="email">
-      <input type="text" placeholder="Asunto" name="asunto">
-      <textarea placeholder="Mensaje" name="msg"></textarea>
-      <input type="submit" name="enviar">
+    <div class="ctn-img">
+      <img class="logo-form" loading="lazy" src="../imagenes/logo.png" alt="Logo ICupCake4u">
+    </div>
+    <form method="post" id="formulario">
+      <!-- Grupo: Nombre -->
+      <div class="formulario__grupo" id="grupo__name">
+        <label for="name" class="formulario__label">Nombre</label>
+        <div class="formulario__grupo-input">
+          <input type="text" class="formulario__input input" name="name" id="name" placeholder="Ingresa tu nombre">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">Debes ingresar un nombre</p>
+      </div>
+
+      <!-- Grupo: Email -->
+      <div class="formulario__grupo" id="grupo__email">
+        <label for="email" class="formulario__label">Email</label>
+        <div class="formulario__grupo-input">
+          <input type="email" class="formulario__input input" name="email" id="email" placeholder="Ingresa tu correo">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guion bajo.</p>
+      </div>
+
+      <!-- Grupo: phone -->
+      <div class="formulario__grupo" id="grupo__phone">
+        <label for="phone" class="formulario__label">Teléfono</label>
+        <div class="formulario__grupo-input">
+          <input type="number" class="formulario__input input" name="phone" id="phone" placeholder="Ingresa tu teléfono">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">EL teléfono solo puede contener números y un maximo de 10 dígitos</p>
+      </div>
+
+      <!-- Grupo: msg -->
+      <div class="formulario__grupo" id="grupo__msg">
+        <label for="msg" class="formulario__label">Mensaje</label>
+        <div class="formulario__grupo-input input">
+          <textarea class="formulario__input" name="msg" id="msg" placeholder="Ingresa un mensaje"></textarea>
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">Debes ingresar un mensaje</p>
+      </div>
+
+      <!-- mensaje de error -->
+      <div class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+      </div>
+
+      <!-- boton de envío -->
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <input type="submit" class="formulario__btn" name="enviar">
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+      </div>
     </form>
   </main>
   <aside>
@@ -88,9 +139,7 @@
       </ul>
     </div>
   </footer>
-  <script src="js/header.js"></script>
-  <?php
-    include("correo.php");
-   ?>
+  <script src="../js/contacto-form.js"></script>
+  <script src="../js/header.js"></script>
 </body>
 </html>
