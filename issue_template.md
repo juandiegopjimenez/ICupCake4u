@@ -8,4 +8,4 @@ Si este problema ocurre en todas las versiones por favor también mencionarlo
 
 ## ¿Cual es el problema?
 
-por favor especifíca cual es el problema que hay en ICupCake4u
+por favor específica cual es el problema que hay en ICupCake4u
